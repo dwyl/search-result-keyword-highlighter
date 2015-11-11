@@ -1,6 +1,6 @@
 {
   "name": "keyword-highlighter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Highlight a set of keywords in the body of text in your search results",
   "main": "index.js",
   "scripts": {
@@ -25,5 +25,21 @@
   "bugs": {
     "url": "https://github.com/dwyl/search-result-keyword-highlighter/issues"
   },
-  "homepage": "https://github.com/dwyl/search-result-keyword-highlighter#readme"
+  "homepage": "https://github.com/dwyl/search-result-keyword-highlighter#readme",
+  "devDependencies": {
+    "istanbul": "^0.4.0",
+    "jsdoc": "^3.3.3",
+    "jshint": "^2.8.0",
+    "nodemon": "^1.8.1",
+    "pre-commit": "1.1.2",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.2"
+  },
+  "pre-commit": [
+    "jshint",
+    "coverage"
+  ],
+  "engines": {
+    "node": ">=0.12"
+  }
 }
