@@ -23,3 +23,12 @@ test(file+'Case iNsEnSiTive Text hiGhLighTing', function(t) {
   t.equal(res, expected, 'The Word "cAt" is highlighted: '+res);
   t.end();
 });
+
+test(file+'Second Case iNsEnSiTive Text hiGhLighTing', function(t) {
+  var str = 'London Bridge is Falling Down FALLING down, fALLiNG Down!';
+  var res = h('falling', str);
+  console.log(res);
+  var expected = "London Bridge is <b class='highlight'>Falling</b> Down <b class='highlight'>FALLING</b> down, <b class='highlight'>fALLiNG</b> Down!";
+  t.equal(res, expected, 'The Word "falling" is highlighted: '+res);
+  t.end();
+});
