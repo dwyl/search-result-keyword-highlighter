@@ -1,5 +1,7 @@
 # Search Result Keyword Highlighter
 
+[![Build Status](https://travis-ci.org/dwyl/search-result-keyword-highlighter.svg)](https://travis-ci.org/dwyl/search-result-keyword-highlighter)
+
 Highlight a keyword in the body of text for a given search result.
 
 ## Why?
