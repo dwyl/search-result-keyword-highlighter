@@ -33,7 +33,7 @@ test(file+'Match multiple distinct keywords', function(t) {
   var result = h('javascript london', text);
   // console.log(result);
   var expected = "I write <b class='highlight'>JavaScript</b> Code in Lovely <b class='highlight'>London</b>!";
-  t.equal(result, expected, 'Highlight "Java" in JavaScript: '+result);
+  t.equal(result, expected, 'The words "JavaScript" and "London" are highlighted: '+result);
   t.end();
 });
 
