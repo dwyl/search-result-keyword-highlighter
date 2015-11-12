@@ -23,7 +23,7 @@
     "server",
     "node.js"
   ],
-  "author": "dwyl",
+  "author": "Rafe @rjmk + Friends",
   "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/dwyl/search-result-keyword-highlighter/issues"
