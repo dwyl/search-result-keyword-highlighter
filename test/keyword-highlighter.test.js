@@ -4,10 +4,6 @@ var test = require('tape');
 
 var h    = require('../lib/keyword-highlighter.js');
 
-// h.setStartTag();
-// h.setEndTag();
-
-
 test(file+'Basic Single String Substitution', function(t) {
   var str = 'The Cat in the Hat Sat on the Mat.';
   var res = h('Hat', str);
@@ -24,11 +20,10 @@ test(file+'Case iNsEnSiTive Text hiGhLighTing', function(t) {
   t.end();
 });
 
-test(file+'Second Case iNsEnSiTive Text hiGhLighTing', function(t) {
-  var str = 'London Bridge is Falling Down FALLING down, fALLiNG Down!';
-  var res = h('falling', str);
-  console.log(res);
-  var expected = "London Bridge is <b class='highlight'>Falling</b> Down <b class='highlight'>FALLING</b> down, <b class='highlight'>fALLiNG</b> Down!";
-  t.equal(res, expected, 'The Word "falling" is highlighted: '+res);
+test.only(file+'Partial String match Java in JavaScript', function(t) {
+  var str = 'Simon is Super Good at JavaScript!';
+  var res = h('Java', str);
+  var expected = "Simon is Super Good at <b class='highlight'>Java</b>Script!";
+  t.equal(res, expected, 'Highlight "Java" in JavaScript: '+res);
   t.end();
 });
