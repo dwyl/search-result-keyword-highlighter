@@ -20,10 +20,19 @@ test(file+'Case iNsEnSiTive Text hiGhLighTing', function(t) {
   t.end();
 });
 
-test.only(file+'Partial String match Java in JavaScript', function(t) {
+test(file+'Partial String match Java in JavaScript', function(t) {
   var str = 'Simon is Super Good at JavaScript!';
   var res = h('Java', str);
   var expected = "Simon is Super Good at <b class='highlight'>Java</b>Script!";
   t.equal(res, expected, 'Highlight "Java" in JavaScript: '+res);
+  t.end();
+});
+
+test(file+'Match multiple distinct keywords', function(t) {
+  var text = 'I write JavaScript Code in Lovely London!';
+  var result = h('javascript london', text);
+  console.log(result);
+  var expected = "I write <b class='highlight'>JavaScript</b> Code in Lovely <b class='highlight'>London</b>!";
+  t.equal(result, expected, 'Highlight "Java" in JavaScript: '+result);
   t.end();
 });
