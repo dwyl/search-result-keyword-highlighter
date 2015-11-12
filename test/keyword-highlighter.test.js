@@ -31,8 +31,17 @@ test(file+'Partial String match Java in JavaScript', function(t) {
 test(file+'Match multiple distinct keywords', function(t) {
   var text = 'I write JavaScript Code in Lovely London!';
   var result = h('javascript london', text);
-  console.log(result);
+  // console.log(result);
   var expected = "I write <b class='highlight'>JavaScript</b> Code in Lovely <b class='highlight'>London</b>!";
   t.equal(result, expected, 'Highlight "Java" in JavaScript: '+result);
+  t.end();
+});
+
+test(file+'Find keyword containing hyphen', function(t) {
+  var text = 'Everyone loves their mother-in-law right?';
+  var result = h('mother-in-law', text);
+  // console.log(result);
+  var expected = "Everyone loves their <b class='highlight'>mother-in-law</b> right?";
+  t.equal(result, expected, 'Highlight hyphenated word: '+result);
   t.end();
 });
