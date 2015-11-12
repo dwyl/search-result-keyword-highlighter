@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/dwyl/search-result-keyword-highlighter.svg)](https://travis-ci.org/dwyl/search-result-keyword-highlighter)
 [![codecov.io](https://codecov.io/github/dwyl/search-result-keyword-highlighter/coverage.svg?branch=master)](https://codecov.io/github/dwyl/search-result-keyword-highlighter?branch=master)
+[![Code Climate](https://codeclimate.com/github/dwyl/search-result-keyword-highlighter/badges/gpa.svg)](https://codeclimate.com/github/dwyl/search-result-keyword-highlighter)
 [![Dependency Status](https://david-dm.org/dwyl/search-result-keyword-highlighter.svg)](https://david-dm.org/dwyl/search-result-keyword-highlighter)
 [![devDependency Status](https://david-dm.org/dwyl/search-result-keyword-highlighter/dev-status.svg)](https://david-dm.org/dwyl/search-result-keyword-highlighter#info=devDependencies)
 
