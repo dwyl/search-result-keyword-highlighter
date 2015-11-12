@@ -84,13 +84,19 @@ I write <b class='highlight'>JavaScript</b>
 Code in Lovely <b class='highlight'>London</b>!
 ```
 
+# Done.
 
+<br />
+<br />
+<hr />
 
-## Is it *Fast*?
+## Discussion:
+
+### Is it *Fast*?
 
 > Try it! And Judge for yourself!
 
-## Discussion:
+### Should we only sub complete words...?
 
 Consider the following example:
 
