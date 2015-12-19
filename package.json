@@ -1,6 +1,6 @@
 {
   "name": "keyword-highlighter",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Highlight a set of keywords in the body of text in your search results",
   "main": "lib/keyword-highlighter.js",
   "scripts": {

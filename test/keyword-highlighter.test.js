@@ -45,3 +45,12 @@ test(file+'Find keyword containing hyphen', function(t) {
   t.equal(result, expected, 'Highlight hyphenated word: '+result);
   t.end();
 });
+
+test(file+'Find keyword containing regex special characters', function(t) {
+  var text = 'The c++ is cool';
+  var result = h('c++', text);
+  // console.log(result);
+  var expected = "The <b class='highlight'>c++</b> is cool";
+  t.equal(result, expected, 'Highlight regex special characters: '+result);
+  t.end();
+});
