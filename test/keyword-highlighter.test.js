@@ -50,6 +50,15 @@ test(file+'Find keyword and delete unnecessary spaces', function(t) {
   var text = 'Whaouu too many spaces here!';
   var result = h('many            spaces', text);
   var expected = "Whaouu too <b class='highlight'>many</b> <b class='highlight'>spaces</b> here!";
-  t.equal(result, expected, 'Highlight "spaces" word and delete unnecessary spaces: '+result);
+  t.equal(result, expected, 'Highlight "many"  and "spaces" words and delete unnecessary spaces: '+result);
+  t.end();
+});
+
+test(file+'Find keyword containing regex special characters', function(t) {
+  var text = 'The c++ is cool';
+  var result = h('c++', text);
+  // console.log(result);
+  var expected = "The <b class='highlight'>c++</b> is cool";
+  t.equal(result, expected, 'Highlight regex special characters: '+result);
   t.end();
 });
